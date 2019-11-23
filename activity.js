@@ -25,8 +25,6 @@ function runProgram() {
         }
     ]).then(function(data) {
 
-        console.log(data)
-
         switch (data.command) {
 
             case "show":
@@ -40,7 +38,6 @@ function runProgram() {
 }
 
 function getShow(show) {
-    console.log("the getshow function is connected")
       
     let query = show
     if (query === "") query = "Heroes"
@@ -76,8 +73,7 @@ function getShow(show) {
 
 }
 
-function getActor(actor) {
-    console.log("the getActor function is connected")    
+function getActor(actor) {  
     
     let query = actor
     if (query === "") query = "masi+oka"
@@ -90,7 +86,6 @@ function getActor(actor) {
 
             let divider = "\n-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--\n\n"
 
-            console.log(actorData)
             console.log(
             `-=-=-=-=-=-=-=-=-=-=-=-
             Name: ${actorData.name}
